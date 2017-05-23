@@ -1,0 +1,157 @@
+# Git Ignore File.
+# DMW
+
+# use glob syntax.
+syntax: glob
+
+# ===== ===== Languages ===== ===== 
+# C variant files
+*.o
+*.gch
+
+# Java
+*.class
+.classpath
+
+
+# ===== ===== Development Environments ===== ===== 
+# XCode Files
+*.xcodeproj
+
+# ===== ===== Revision Control Files ===== ===== 
+commit.txt
+
+
+#git files
+.git/*
+
+# ===== ===== Home Dir files ===== ===== 
+# just plain ignore
+
+
+.atom
+.autoenv*
+.aws/*
+.bundle
+.emulator*
+.heroku*
+.eclipse/*
+.face*
+.MacOSX/*
+.Trash/*
+.android/*
+.eclipse_keyring/*
+.ICE*
+.idlerc/*
+.irb*
+.m2/*
+.macports/*
+.mate*
+.mongorc.js
+.netrc*
+.adobe*
+.aptitude*
+.arduino*
+.bash*
+.c*
+.d*
+.eclipse/*
+.eclipse_keyring
+.emacs.d/auto-save-list/
+.esd*
+.evo*
+.fuse*
+.font*
+.g*
+.keepassx/*
+.java*
+.kde*
+.l*
+.matlab*
+.mission*
+.matplotlib/*
+.modulus/
+.mozilla*
+.nautilus*
+.node*
+.npm*
+.nv/*
+.nvidia-settings-rc*
+.nvm/*
+.o*
+.p2/*
+.pip/*
+.pki*
+.psql_*
+.profile
+.python_history
+.pulse*
+.recently*
+.rvm*
+.rbenv*
+.sh_history
+.sqlite_history
+.ssh*
+.subversion/*
+.synaptic*
+.sudo*
+.tex*
+.tooling*
+.thumbnails*
+.update-manager-core*
+.virtualenvs*
+.x*
+.X*
+.zcompdump*
+.zlogin
+.zshenv
+.zshrc
+.Trashes*
+AppData*
+Applications/*
+Contacts*
+Documents*
+Desktop*
+Downloads/*
+Favorites*
+iTunes*
+Library/*
+Links*
+NTUSER*
+Mail*
+Searches*
+Thumbs.db
+thumbs.kdb
+ntuser*
+workspace/*
+
+# under their own git repositories:
+project*
+
+# rsync these, because they're binary:
+.passwd.kdbx
+Export*.vssettings
+text*
+audio*
+job*
+language*
+mileage-export*
+music*
+pictures*
+people*
+taxes*
+video*
+
+# ===== ===== Operating System Dependent Files ===== ===== 
+#windows files
+*.lnk
+*.dll
+*.exe
+
+# Mac OSX
+.DS_Store
+
+# Linux
+.viminfo
+
+

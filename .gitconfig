@@ -1,0 +1,36 @@
+# git config file
+# williamsd, 2017, May
+
+[alias]
+        sta=status
+	st = status
+	ls = ls-files
+	co = checkout
+
+[user]
+        name = Daniel_M_Williams
+	email = equipoise@gmail.com
+        #merge = C:\Program Files\WinMerge\WinMerge.exe
+
+[core]
+        autocrlf=input
+        # excludesfile = c:/documents and settings/williamsd/.ignore
+        editor = emacs
+        fileMode = false
+	excludesfile = /Users/widget/.gitignore
+
+[man]
+        viewer = man
+
+[push]
+	default = simple
+
+[merge]
+	commit = no
+	ff = only
+
+[log]
+	abbrevcommit = true
+
+[format]
+	pretty = oneline
