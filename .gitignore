@@ -151,7 +151,8 @@ video*
 # Mac OSX
 .DS_Store
 
+# ===== ===== Editor Files ===== ===== 
 # Linux
 .viminfo
-
+*~
 
