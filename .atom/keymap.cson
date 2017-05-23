@@ -1,0 +1,4 @@
+'atom-text-editor':
+  'enter': 'editor:newline'
+  'ctrl-a': 'editor:select-to-first-character-of-line'
+  'ctrl-e': 'editor:select-to-end-of-line'

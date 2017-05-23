@@ -1,0 +1,12 @@
+"*":
+  "bracket-matcher":
+    autocompleteBrackets: false
+  core:
+    autoHideMenuBar: true
+    packagesWithKeymapsDisabled: [
+      "bracket-matcher"
+    ]
+    projectHome: "/home/teyrana/project"
+    telemetryConsent: "limited"
+  "exception-reporting":
+    userId: "73eaadee-8161-4b12-a420-761cbeb9ae62"
