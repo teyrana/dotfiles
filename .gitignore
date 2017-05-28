@@ -1,37 +1,33 @@
 # Git Ignore File.
-# DMW
 
 # use glob syntax.
 syntax: glob
 
-# ===== ===== Languages ===== ===== 
+# ===== ===== Programming ===== ===== 
 # C variant files
 *.o
+*.so
+
+# Haskell
 *.gch
 
 # Java
 *.class
 .classpath
 
-
-# ===== ===== Development Environments ===== ===== 
 # XCode Files
 *.xcodeproj
 
 # ===== ===== Revision Control Files ===== ===== 
 commit.txt
-
-
-#git files
-.git/*
+.git*
 
 # ===== ===== Home Dir files ===== ===== 
 # just plain ignore
-
-
 .atom
 .autoenv*
 .aws/*
+bookmarks_current.html
 .bundle
 .emulator*
 .heroku*
@@ -97,8 +93,9 @@ commit.txt
 .sudo*
 .tex*
 .tooling*
-.thumbnails*
+.thumb*
 .update-manager-core*
+.viminfo
 .virtualenvs*
 .x*
 .X*
@@ -127,10 +124,12 @@ workspace/*
 
 # under their own git repositories:
 project*
+notes
+recipe/
+records/
+sync/
 
-# rsync these, because they're binary:
-.passwd.kdbx
-Export*.vssettings
+# rsync binaries:
 text*
 audio*
 job*
@@ -143,16 +142,5 @@ taxes*
 video*
 
 # ===== ===== Operating System Dependent Files ===== ===== 
-#windows files
-*.lnk
-*.dll
-*.exe
-
 # Mac OSX
 .DS_Store
-
-# ===== ===== Editor Files ===== ===== 
-# Linux
-.viminfo
-*~
-
