@@ -1,0 +1,78 @@
+# makefile
+# Latex on Linux 
+
+DATE      = `date +%Y%b%d`
+
+# define files
+SRCEXT	  = .tex
+OUTEXT    = .pdf
+TEXSRC	  = spaceflight.tex
+PDFF      = $(TEXSRC:$(SRCEXT)=.pdf)
+BUILDF    = $(TEXSRC:$(SRCEXT)=.log)  $(TEXSRC:$(EXT)=.aux)
+BUILD_DIR = ./
+OUTF	  = spaceflight_$(DATE)$(OUTEXT)
+LOGF	  = 
+ZIPF	  = notes_$(DATE).zip
+
+# latex build params
+CC	  = pdflatex
+VIEWER    = 
+CFLAGS    = -halt-on-error $(DEST_FLAGS)
+DEST_FLAGS= -output-directory $(BUILD_DIR)
+
+# ===== ===== Detect Platform ===== =====
+SYSTEM_NAME := $(shell uname -s)
+
+ifeq ($(SYSTEM_NAME), Linux)
+	# linux, aimed at ubuntu
+	PLATFORM_DETECTED = LINUX
+	VIEWER = evince
+endif
+ifeq ($(SYSTEM_NAME), Darwin)
+	PLATFORM_DETECTED = MAC_OSX
+	VIEWER = open -a Preview
+endif
+ifeq ($(OS), Windows_NT)
+	# not in the command line. :(
+	PLATFORM_DETECTED = WINDOWS
+	VIEWER = D:\programFiles\SumatraPDF\SumatraPDF.exe
+endif
+
+# flags used here:
+FLAGS_RELEASE   =
+FLAGS_DEBUG     =
+CPPFLAGS        =
+
+# ===== ===== Build Rules ===== =====
+# set default target
+.PHONY:run
+run: pdf
+
+# use these to debug file
+.PHONY: env
+env:
+	# SYSTEM_NAME = '$(SYSTEM_NAME)'
+	# OS='$(OS)' (windows only?)
+	# PLATFORM_DETECTED='$(PLATFORM_DETECTED)'
+	# SOURCE_LIST='$(SOURCE_LIST)'
+
+# (actual build rules)
+pdf: $(SRC)
+	$(CC) $(CFLAGS) $(TEXSRC)
+
+view: $(BUILD_DIR)$(PDFF)
+	$(VIEWER) $(BUILD_DIR)$(PDFF)
+
+#http://www.gnu.org/manual/make-3.79.1/html_chapter/make_10.html
+%.pdf : %$(SRCEXT)
+	$(CC) $< -c $(CFLAGS) -o $@
+
+
+# enable debugging mode
+zip: clean
+	mv -f $(BUILD_DIR)$(PDFF) $(BUILD_DIR)$(OUTF) 
+	zip null null
+
+# clean up object/error files and executables
+clean:
+	rm -f $(BUILDF) $(OUT_FILES)
