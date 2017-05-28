@@ -5,7 +5,19 @@
       accentColor: "#87ae86"
   "bracket-matcher":
     autocompleteBrackets: false
+    autocompleteCharacters: [
+      "()"
+      "[]"
+      "{}"
+      "«»"
+      "‹›"
+      "\"\""
+      "''"
+      "``"
+    ]
+    autocompleteSmartQuotes: false
   core:
+    audioBeep: false
     autoHideMenuBar: true
     packagesWithKeymapsDisabled: [
       "bracket-matcher"
@@ -16,12 +28,22 @@
       "atom-material-ui"
       "zenburn"
     ]
+  editor:
+    showIndentGuide: true
+    tabType: "soft"
   "exception-reporting":
     userId: "73eaadee-8161-4b12-a420-761cbeb9ae62"
+  "git-diff":
+    showIconsInEditorGutter: true
+  python:
+    source:
+      editor:
+        preferredLineLength: 90
+        scrollPastEnd: false
+        showIndentGuide: true
+  "tree-view":
+    hideIgnoredNames: true
+    hideVcsIgnoredFiles: true
+    sortFoldersBeforeFiles: false
   welcome:
     showOnStartup: false
-".python.source":
-  editor:
-    preferredLineLength: 90
-    scrollPastEnd: false
-    showIndentGuide: true
