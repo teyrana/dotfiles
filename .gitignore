@@ -24,19 +24,25 @@ commit.txt
 
 # ===== ===== Home Dir files ===== ===== 
 # just plain ignore
+.android/*
 .atom
 .autoenv*
 .aws/*
+.adobe*
+.aptitude*
+.arduino*
+.bash*
 bookmarks_current.html
 .bundle
+.c*
+.d*
+.eclipse_keyring/*
 .emulator*
 .heroku*
 .eclipse/*
 .face*
 .MacOSX/*
 .Trash/*
-.android/*
-.eclipse_keyring/*
 .ICE*
 .idlerc/*
 .irb*
@@ -45,12 +51,6 @@ bookmarks_current.html
 .mate*
 .mongorc.js
 .netrc*
-.adobe*
-.aptitude*
-.arduino*
-.bash*
-.c*
-.d*
 .eclipse/*
 .eclipse_keyring
 .emacs.d/auto-save-list/
@@ -75,6 +75,7 @@ bookmarks_current.html
 .nvidia-settings-rc*
 .nvm/*
 .o*
+.pam_environment
 .p2/*
 .pip/*
 .pki*
