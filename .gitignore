@@ -88,6 +88,8 @@ bookmarks_current.html
 .rbenv*
 .sh_history
 .sqlite_history
+.smr*
+smr*
 .ssh*
 .subversion/*
 .synaptic*
@@ -145,3 +147,4 @@ video*
 # ===== ===== Operating System Dependent Files ===== ===== 
 # Mac OSX
 .DS_Store
+
