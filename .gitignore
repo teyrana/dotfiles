@@ -24,6 +24,7 @@ commit.txt
 
 # ===== ===== Home Dir files ===== ===== 
 # just plain ignore
+.*
 .android/*
 .atom
 .autoenv*
@@ -33,6 +34,7 @@ commit.txt
 .arduino*
 .bash*
 bookmarks_current.html
+build/*
 .bundle
 .c*
 .d*
@@ -96,10 +98,9 @@ smr*
 .sudo*
 .tex*
 .tooling*
-.thumb*
 .update-manager-core*
-.viminfo
 .virtualenvs*
+.wxFormBuilder
 .x*
 .X*
 .zcompdump*
