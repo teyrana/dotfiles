@@ -6,6 +6,7 @@
         st = status
         ls = ls-files
         co = checkout
+        sub= submodule
 
 [user]
         name = Daniel_M_Williams
