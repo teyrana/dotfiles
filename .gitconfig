@@ -2,25 +2,20 @@
 # williamsd, 2017, May
 
 [alias]
-        sta=status
-	st = status
-	ls = ls-files
-	co = checkout
+        sta = status
+        st = status
+        ls = ls-files
+        co = checkout
 
 [user]
         name = Daniel_M_Williams
-	email = equipoise@gmail.com
-        #merge = C:\Program Files\WinMerge\WinMerge.exe
-
+        email = equipoise@gmail.com
+        
 [core]
-        autocrlf=input
-        # excludesfile = c:/documents and settings/williamsd/.ignore
+        autocrlf = input
+        filemode = false
         editor = emacs
-        fileMode = false
-	excludesfile = /Users/widget/.gitignore
-
-[man]
-        viewer = man
+	excludesfile = ~/.gitignore
 
 [push]
 	default = simple
@@ -34,3 +29,6 @@
 
 [format]
 	pretty = oneline
+
+[receive]
+	denyCurrentBranch = updateInstead
