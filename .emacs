@@ -9,7 +9,6 @@
 (load (concat path "funcs.el"))
 (load (concat path "js.el"))
 (load (concat path "keys.el"))
-(load (concat path "python.el"))
 (load (concat path "settings.el"))
 (load (concat path "ui.el"))
 (load (concat path "yaml-mode.el"))
