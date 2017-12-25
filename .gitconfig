@@ -2,6 +2,7 @@
 # williamsd, 2017, May
 
 [alias]
+        br = branch
         sta = status
         st = status
         ls = ls-files
