@@ -20,7 +20,6 @@ syntax: glob
 
 # ===== ===== Revision Control Files ===== ===== 
 commit.txt
-.git*
 
 # ===== ===== Home Dir files ===== ===== 
 # just plain ignore
