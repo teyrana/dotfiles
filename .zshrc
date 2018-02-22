@@ -3,6 +3,9 @@
  
 
 alias ll='ls -l'
+alias emacsnw='emacs -nw'
+alias nemacs='emacs -nw'
+
 
 # %T
 #    Current time of day, in 24-hour format.
