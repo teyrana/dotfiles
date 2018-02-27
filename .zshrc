@@ -6,6 +6,9 @@ alias ll='ls -l'
 alias emacsnw='emacs -nw'
 alias nemacs='emacs -nw'
 
+# these enable command history
+export SAVEHIST=10
+export HISTFILE=~/.zsh_history
 
 # %T
 #    Current time of day, in 24-hour format.
