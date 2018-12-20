@@ -8,6 +8,10 @@ syntax: glob
 *.o
 *.so
 
+#python
+*.pyc
+__pycache__
+
 # Haskell
 *.gch
 
@@ -89,8 +93,6 @@ build/*
 .rbenv*
 .sh_history
 .sqlite_history
-.smr*
-smr*
 .ssh*
 .subversion/*
 .synaptic*
@@ -124,27 +126,4 @@ Thumbs.db
 thumbs.kdb
 ntuser*
 workspace/*
-
-# under their own git repositories:
-project*
-notes
-recipe/
-records/
-sync/
-
-# rsync binaries:
-text*
-audio*
-job*
-language*
-mileage-export*
-music*
-pictures*
-people*
-taxes*
-video*
-
-# ===== ===== Operating System Dependent Files ===== ===== 
-# Mac OSX
-.DS_Store
 

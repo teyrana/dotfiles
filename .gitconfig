@@ -3,15 +3,16 @@
 
 [alias]
         br = branch
+        co = checkout
+        ea = submodule foreach
         sta = status
         st = status
         ls = ls-files
-        co = checkout
         sub= submodule
 
 [user]
         name = Daniel_M_Williams
-        email = equipoise@gmail.com
+        email = dwilliams@sea-machines.com
         
 [core]
         autocrlf = input
@@ -28,9 +29,12 @@
 
 [log]
 	abbrevcommit = true
+        decorate = auto
 
 [format]
 	pretty = oneline
 
 [receive]
 	denyCurrentBranch = updateInstead
+[status]
+	submodulesummary = 1
