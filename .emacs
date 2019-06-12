@@ -7,6 +7,10 @@
 (load (concat path "color.el"))
 (load (concat path "c.el"))
 (load (concat path "funcs.el"))
+(load (concat path "go-mode.el"))
+(autoload 'go-mode "go-mode" nil t)
+(add-to-list 'auto-mode-alist '("\\.go\\'" . go-mode))
+
 (load (concat path "js.el"))
 (load (concat path "keys.el"))
 (load (concat path "settings.el"))
