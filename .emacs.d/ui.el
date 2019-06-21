@@ -1,8 +1,8 @@
 ;;;;======================= general settings ================================
 (setq inhibit-startup-screen t)
 (menu-bar-mode -1)
-;;(if (boundp tool-bar-mode)
-;;    (tool-bar-mode -1))
+(if (boundp tool-bar-mode)
+    (tool-bar-mode -1))
 
 ;; ;; ======================= font settings ================================
 (if (eq window-system 'x)
