@@ -5,7 +5,6 @@
 ;; (global-set-key (kbd "C-h k") 'describe-key)
 ;; (global-set-key (kbd "C-h f") 'describe-function)
 
-
 ;;;;======================= keybindings ===============================
 ;; I wanted to remap the alt-delete behavior to C-DEL, M-Backspace, and C-Backspace….
 ;; But it didn’t work.
@@ -56,6 +55,11 @@
 (global-set-key (kbd "^c ^c") 'compile)
 (global-unset-key (kbd "M-r"))
 (global-set-key (kbd "M-r") 'replace-regexp)
+
+;; Copy Paste
+(global-set-key (kbd "C-j") 'kill-line)
+(global-unset-key (kbd "C-k"))
+(global-set-key (kbd "C-k") 'yank)
 
 
 ;; movement
