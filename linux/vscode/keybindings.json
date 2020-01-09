@@ -41,18 +41,8 @@
         "when": "textInputFocus"
     },
     {
-        "key": "shift+end",
-        "command": "-cursorEndSelect",
-        "when": "textInputFocus"
-    },
-    {
-        "key": "ctrl+n",
+        "key": "alt+n",
         "command": "cursorPageUp",
-        "when": "textInputFocus"
-    },
-    {
-        "key": "pageup",
-        "command": "-cursorPageUp",
         "when": "textInputFocus"
     },
     {
@@ -60,21 +50,16 @@
         "command": "-workbench.action.files.newUntitledFile"
     },
     {
-        "key": "pagedown",
-        "command": "-cursorPageDown",
-        "when": "textInputFocus"
-    },
-    {
         "key": "shift+alt+ctrl+pagedown",
         "command": "-cursorColumnSelectPageDown",
         "when": "textInputFocus"
     },
     {
-        "key": "shift+ctrl+v",
+        "key": "shift+alt+v",
         "command": "cursorPageDownSelect"
     },
     {
-        "key": "shift+ctrl+n",
+        "key": "shift+alt+n",
         "command": "cursorPageUpSelect",
         "when": "textInputFocus"
     },
@@ -125,7 +110,7 @@
     },
     {
         "key": "ctrl+t",
-        "command": "cursorLeft",
+        "command": "cursorRight",
         "when": "textInputFocus"
     },
     {
@@ -140,7 +125,7 @@
     },
     {
         "key": "ctrl+w",
-        "command": "cursorRight",
+        "command": "cursorLeft",
         "when": "textInputFocus"
     },
     {
@@ -162,15 +147,9 @@
         "key": "ctrl+enter",
         "command": "-explorer.openToSide",
         "when": "explorerViewletFocus && explorerViewletVisible && !inputFocus"
-    },
-    {
+    },{
         "key": "shift+ctrl+e",
         "command": "-workbench.view.explorer"
-    },
-    {
-        "key": "ctrl+c",
-        "command": "-editor.action.clipboardCopyAction",
-        "when": "textInputFocus"
     },
     {
         "key": "ctrl+j",
@@ -178,7 +157,7 @@
     },
     {
         "key": "ctrl+j",
-        "command": "editor.action.clipboardPasteAction",
+        "command": "editor.action.clipboardCopyAction",
         "when": "textInputFocus && !editorReadonly"
     },
     {
@@ -193,7 +172,7 @@
     },
     {
       "key": "ctrl+k",
-      "command": "editor.action.clipboardCutAction",
+      "command": "editor.action.clipboardPasteAction",
       "when": "textInputFocus && !editorReadonly"
     },    
     {
@@ -250,18 +229,8 @@
         "when": "editorTextFocus && !editorReadonly"
     },
     {
-        "key": "ctrl+c",
-        "command": "-filesExplorer.copy",
-        "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !inputFocus"
-    },
-    {
         "key": "ctrl+j",
         "command": "keybindings.editor.copyKeybindingEntry",
-        "when": "inKeybindings && keybindingFocus"
-    },
-    {
-        "key": "ctrl+c",
-        "command": "-keybindings.editor.copyKeybindingEntry",
         "when": "inKeybindings && keybindingFocus"
     },
     {
@@ -270,39 +239,14 @@
         "when": "problemFocus"
     },
     {
-        "key": "ctrl+c",
-        "command": "-problems.action.copy",
-        "when": "problemFocus"
-    },
-    {
         "key": "ctrl+j",
         "command": "search.action.copyMatch",
-        "when": "fileMatchOrMatchFocus"
-    },
-    {
-        "key": "ctrl+c",
-        "command": "-search.action.copyMatch",
         "when": "fileMatchOrMatchFocus"
     },
     {
         "key": "ctrl+j",
         "command": "workbench.action.terminal.copySelection",
         "when": "terminalFocus && terminalTextSelected"
-    },
-    {
-        "key": "ctrl+c",
-        "command": "-workbench.action.terminal.copySelection",
-        "when": "terminalFocus && terminalTextSelected"
-    },
-    {
-        "key": "alt+ctrl+c",
-        "command": "-copyFilePath",
-        "when": "!editorFocus"
-    },
-    {
-        "key": "shift+alt+ctrl+c",
-        "command": "-copyRelativeFilePath",
-        "when": "!editorFocus"
     },
     {
         "key": "ctrl+k ctrl+r",
@@ -313,133 +257,18 @@
         "command": "workbench.action.toggleSidebarVisibility"
     },
     {
+      "key": "alt+escape",
+      "command": "workbench.action.toggleSidebarVisibility"
+    },{
         "key": "ctrl+b",
         "command": "-workbench.action.toggleSidebarVisibility"
+    },{
+      "key": "ctrl+h",
+      "command": "editor.action.startFindReplaceAction"
     },
     {
-      "key": "ctrl+1",
-      "command": "-workbench.action.openEditorAtIndex1"
-    },
-    {
-      "key": "alt+1",
-      "command": "workbench.action.openEditorAtIndex1"
-    },
-    {
-      "key": "ctrl+2",
-      "command": "-workbench.action.openEditorAtIndex2"
-    },
-    {
-      "key": "alt+2",
-      "command": "workbench.action.openEditorAtIndex2"
-    },
-    {
-      "key": "ctrl+3",
-      "command": "-workbench.action.openEditorAtIndex3"
-    },
-    {
-      "key": "alt+3",
-      "command": "workbench.action.openEditorAtIndex3"
-    },
-    {
-      "key": "ctrl+4",
-      "command": "-workbench.action.openEditorAtIndex4"
-    },
-    {
-      "key": "alt+4",
-      "command": "workbench.action.openEditorAtIndex4"
-    },
-    {
-      "key": "ctrl+5",
-      "command": "-workbench.action.openEditorAtIndex5"
-    },
-    {
-        "key": "alt+5",
-        "command": "workbench.action.openEditorAtIndex5"
-    },
-    {
-      "key": "ctrl+6",
-      "command": "-workbench.action.openEditorAtIndex6"
-    },
-    {
-      "key": "alt+6",
-      "command": "workbench.action.openEditorAtIndex6"
-    },
-    {
-      "key": "ctrl+7",
-      "command": "-workbench.action.openEditorAtIndex7"
-    },
-    {
-      "key": "alt+7",
-      "command": "workbench.action.openEditorAtIndex7"
-    },
-    {
-      "key": "ctrl+8",
-      "command": "-workbench.action.openEditorAtIndex8"
-    },
-    {
-      "key": "alt+8",
-      "command": "workbench.action.openEditorAtIndex8"
-    },
-    {
-      "key": "ctrl+9",
-      "command": "-workbench.action.openEditorAtIndex9"
-    },
-    {
-      "key": "alt+9",
-      "command": "workbench.action.openEditorAtIndex8"
-    },
-    
-    {
-        "key": "alt+1",
-        "command": "-workbench.action.focusFirstEditorGroup"
-    },
-    {
-        "key": "ctrl+1",
-        "command": "workbench.action.focusFirstEditorGroup"
-    },
-    {
-        "key": "alt+2",
-        "command": "-workbench.action.focusSecondEditorGroup"
-    },
-    {
-        "key": "ctrl+2",
-        "command": "workbench.action.focusSecondEditorGroup"
-    },
-    {
-      "key": "alt+3",
-      "command": "-workbench.action.focusThirdEditorGroup"
-    },
-    {
-      "key": "ctrl+3",
-      "command": "workbench.action.focusThirdEditorGroup"
-    },
-    {
-      "key": "alt+4",
-      "command": "workbench.action.focusFourthEditorGroup"
-    },
-    {
-      "key": "ctrl+4",
-      "command": "-workbench.action.focusFourthEditorGroup"
-    },
-    {
-      "key": "ctrl+5",
-      "command": "-workbench.action.focusFifthEditorGroup"
-    },
-    {
-      "key": "ctrl+6",
-      "command": "-workbench.action.focusSixthEditorGroup"
-    },
-    {
-      "key": "ctrl+7",
-      "command": "-workbench.action.focusSeventhEditorGroup"
-    },
-    {
-        "key": "ctrl+h",
-        "command": "editor.action.startFindReplaceAction"
-    },
-    {
-        "key": "alt+ctrl+f",
-        "command": "-editor.action.startFindReplaceAction"
+      "key": "alt+ctrl+f",
+      "command": "-editor.action.startFindReplaceAction"
     },
     {
         "key": "ctrl+-",
