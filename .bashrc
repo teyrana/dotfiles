@@ -9,3 +9,5 @@ alias ll='ls -lh'
 alias nemacs='emacs -nw'
 alias pp='pwd'
 
+# this disables interception of the 'ctrl-s', allowing bash-search
+stty -ixon
