@@ -1,5 +1,5 @@
 # git config file
-# williamsd, 2017, May
+# dwilliams, 2019
 
 [alias]
         br = branch
@@ -10,10 +10,11 @@
         st = status
         ls = ls-files
         sub= submodule
+        pf = push --force-with-lease
 
 [user]
-        name = Daniel_M_Williams
-        email = equipoise@gmail.com
+        name = Daniel Williams
+        email = dwilliams@nextdroid.com
         
 [core]
         autocrlf = input
@@ -35,7 +36,13 @@
 [format]
 	pretty = oneline
 
-[receive]
-	denyCurrentBranch = updateInstead
-[status]
-	submodulesummary = 1
+# [receive]
+#	denyCurrentBranch = updateInstead
+# [status]
+#	submodulesummary = 1
+#
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
