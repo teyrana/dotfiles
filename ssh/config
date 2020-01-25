@@ -1,0 +1,21 @@
+Host github.com
+     User teyrana
+     Hostname github.com
+     PreferredAuthentications publickey
+     IdentityFile ~/.ssh/id_rsa_github
+
+Host gitlab.com
+     User teyrana
+     Hostname gitlab.com
+     PreferredAuthentications publickey
+     IdentityFile ~/.ssh/id_rsa_gitlab
+
+Host heroku.com
+     Hostname heroku.com
+     PreferredAuthentications publickey
+     IdentityFile ~/.ssh/id_rsa_heroku
+
+Host divi
+     Hostname divi
+     PreferredAuthentications publickey
+     IdentityFile ~/.ssh/id_rsa_divi
