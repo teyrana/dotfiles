@@ -14,12 +14,12 @@
 
 [user]
         name = Daniel Williams
-        email = dwilliams@nextdroid.com
+        email = equipoise@gmail.com
         
 [core]
         autocrlf = input
         filemode = false
-        editor = emacs
+        editor = jmacs
 	excludesfile = ~/.gitignore
 
 [push]
