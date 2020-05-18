@@ -1,7 +1,7 @@
 ;;;;======================= general settings ================================
 (setq inhibit-startup-screen t)
 (menu-bar-mode -1)
-(if (boundp tool-bar-mode)
+(if window-system
     (tool-bar-mode -1))
 
 ;; ;; ======================= font settings ================================
@@ -14,7 +14,7 @@
 ;;	  (set-frame-font "-bitstream-Bitstream Charter-normal-normal-normal-*-*-*-*-*-*-0-iso10646-1"))
 
 ;;;;======================= other settings ================================
-(cond ((not running-xemacs)
+(cond ((not window-system)
        (global-font-lock-mode t) ))
 
 ;; Automatically makes the matching paren stand out in color.
