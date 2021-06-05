@@ -5,12 +5,13 @@
         br = branch
         co = checkout
         ea = submodule foreach
+        ls = ls-files
+        st = status
         sta = show --stat
         stat = show --stat
-        st = status
-        ls = ls-files
-        sub= submodule
         pf = push --force-with-lease
+        sub = submodule
+        subup = sub update --init --recursive
 
 [user]
         name = Daniel Williams
