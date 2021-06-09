@@ -10,6 +10,8 @@ alias pp='pwd'
 
 export PATH=$PATH:/home/teyrana/.local/bin
 
+setxkbmap -option ctrl:nocaps
+
 # this disables interception of the 'ctrl-s', allowing bash-search
 stty -ixon
 
