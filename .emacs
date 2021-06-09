@@ -8,4 +8,3 @@
 (load (concat path "keys.el"))
 (load (concat path "settings.el"))
 (load (concat path "ui.el"))
-(load (concat path "yaml-mode.el"))
