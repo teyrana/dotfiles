@@ -10,6 +10,7 @@
         sta = show --stat
         stat = show --stat
         pf = push --force-with-lease
+	root = rev-parse --show-toplevel
         sub = submodule
         subup = sub update --init --recursive
 
