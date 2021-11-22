@@ -21,7 +21,7 @@
 [core]
         autocrlf = input
         filemode = false
-        editor = jmacs
+        editor = emacs
 	excludesfile = ~/.gitignore
 
 [push]
