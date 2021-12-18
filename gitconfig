@@ -5,6 +5,7 @@
         br = branch
         co = checkout
         ea = submodule foreach
+        head = rev-parse --show-toplevel
         ls = ls-files
         st = status
         sta = show --stat
