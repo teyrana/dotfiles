@@ -1,5 +1,5 @@
 # set command prompt
-export PS1="\[\e[32m\][\t]\[\e[0m\]$ "
+export PS1="\[\033[0;32m\][\h]\[\033[1;32m\][\t]\[\e[0m\]$>"
 
 export EDITOR=jmacs
 
