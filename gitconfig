@@ -22,7 +22,7 @@
 [core]
         autocrlf = input
         filemode = false
-        editor = emacs
+        editor = emacs-nox
 	excludesfile = ~/.gitignore
 
 [push]
