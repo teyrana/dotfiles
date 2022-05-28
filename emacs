@@ -5,5 +5,7 @@
 (load (concat path "c.el"))
 (load (concat path "funcs.el"))
 (load (concat path "keys.el"))
+(load (concat path "markdown-mode.el"))
 (load (concat path "settings.el"))
+(load (concat path "typescript-mode.el"))
 (load (concat path "ui.el"))
