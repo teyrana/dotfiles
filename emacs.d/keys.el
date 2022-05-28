@@ -12,9 +12,19 @@
 ;(global-set-key [kp-delete] 'delete-char)
 ;(global-set-key [C-backspace] 'backward-kill-word)
 ;(global-set-key [C-delete] 'kill-word)
-;(global-set-key [M-delete] 'kill-word)
+(global-set-key [M-delete] 'kill-word)
 (global-set-key (kbd "M-d") 'kill-word)
  
+(global-unset-key (kbd "C-_"))
+(global-set-key (kbd "C-_") 'comment-region)
+(global-unset-key (kbd "C-/"))
+(global-set-key (kbd "C-/") 'comment-region)
+(global-unset-key (kbd "C-\\"))
+(global-set-key (kbd "C-\\") 'uncomment-region)
+
+(global-set-key (kbd "M-_") 'comment-line)
+(global-unset-key (kbd "M-\\"))
+(global-set-key (kbd "M-\\") 'comment-line)
 
 ;;===================================
 ;; dvorak keybindings
@@ -24,7 +34,8 @@
 
 (define-key ctrlq (kbd "C-a") 'save-buffer)
 (define-key ctrlq (kbd "a") 'save-some-buffers)
-(define-key ctrlq (kbd "C-o") 'compile)
+;;(define-key ctrlq (kbd "C-o") 'compile)
+(define-key ctrlq (kbd "C-o") 'other-window)
 (define-key ctrlq (kbd "o") 'other-window)
 (define-key ctrlq (kbd "1") 'delete-other-windows)
 (define-key ctrlq (kbd "C-1") 'delete-other-windows)
@@ -40,16 +51,15 @@
 (define-key ctrlx (kbd "C-f") 'find-file)
 (define-key ctrlx (kbd "C-v") 'find-alternate-file)
 (define-key ctrlx (kbd "k") 'kill-buffer)
-
-
 (define-key ctrlx (kbd "1") 'delete-other-windows)
-(define-key ctrlx (kbd "C-w") 'write-file)
-(define-key ctrlx (kbd "C-c") 'kill-emacs)
-(define-key ctrlx (kbd "C-q") 'kill-emacs)
 (define-key ctrlx (kbd "b") 'iswitchb-buffer)
 (define-key ctrlx (kbd "C-b") 'list-buffers )
+(define-key ctrlx (kbd "C-c") 'kill-emacs)
+(define-key ctrlx (kbd "C-o") 'other-window)
+(define-key ctrlx (kbd "C-q") 'kill-emacs)
 (define-key ctrlx (kbd "s") 'save-some-buffers)
 (define-key ctrlx (kbd "C-s") 'save-buffer)
+(define-key ctrlx (kbd "C-w") 'write-file)
 
 ; C-c functions
 (global-set-key (kbd "^c ^c") 'compile)
@@ -57,10 +67,11 @@
 (global-set-key (kbd "M-r") 'replace-regexp)
 
 ;; Copy Paste
+(global-unset-key (kbd "C-j"))
 (global-set-key (kbd "C-j") 'kill-line)
 (global-unset-key (kbd "C-k"))
 (global-set-key (kbd "C-k") 'yank)
-
+(global-set-key (kbd "C-z") 'undo)
 
 ;; movement
 (global-unset-key (kbd "C-t"))
@@ -83,12 +94,14 @@
 (global-set-key (kbd "M-v") 'scroll-up)
 (global-set-key (kbd "M-n") 'scroll-down)
 
-
 ;;===================================
 ;; preference bindings
-(global-set-key [\e] 'keyboard-quit) ;; MAC OSX version
+;;(global-set-key [\e] 'keyboard-quit) ;; MAC OSX version
 (global-set-key [f2] 'undo)
-(global-set-key [f3] 'undo)
+
+(global-set-key [f3] 'isearch-forward)
+(global-set-key [f4] 'replace-regexp)
+
 
 ;; http://ma.darche.free.fr/conf/.emacs
 
