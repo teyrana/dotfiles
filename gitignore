@@ -19,15 +19,9 @@ __pycache__
 *.class
 .classpath
 
-# XCode Files
-*.xcodeproj
-
-# ===== ===== Revision Control Files ===== ===== 
-commit.txt
 
 # ===== ===== Home Dir files ===== ===== 
 # just plain ignore
-.*
 .android/*
 .atom
 .autoenv*
@@ -36,25 +30,16 @@ commit.txt
 .aptitude*
 .arduino*
 .bash*
-bookmarks_current.html
 build/*
 .bundle
-.c*
-.d*
 .eclipse_keyring/*
 .emulator*
-.heroku*
-.eclipse/*
-.face*
-.MacOSX/*
 .Trash/*
 .ICE*
 .idlerc/*
 .irb*
 .m2/*
-.macports/*
 .mate*
-.mongorc.js
 .netrc*
 .eclipse/*
 .eclipse_keyring
@@ -63,14 +48,10 @@ build/*
 .evo*
 .fuse*
 .font*
-.g*
 .keepassx/*
 .java*
 .kde*
-.l*
-.matlab*
 .mission*
-.matplotlib/*
 .modulus/
 .mozilla*
 .nautilus*
@@ -79,7 +60,6 @@ build/*
 .nv/*
 .nvidia-settings-rc*
 .nvm/*
-.o*
 .pam_environment
 .p2/*
 .pip/*
@@ -101,29 +81,9 @@ build/*
 .tooling*
 .update-manager-core*
 .virtualenvs*
-.wxFormBuilder
-.x*
-.X*
-.zcompdump*
-.zlogin
-.zshenv
-.zshrc
 .Trashes*
-AppData*
-Applications/*
-Contacts*
-Documents*
-Desktop*
-Downloads/*
-Favorites*
-iTunes*
-Library/*
-Links*
-NTUSER*
-Mail*
 Searches*
 Thumbs.db
 thumbs.kdb
-ntuser*
 workspace/*
 
