@@ -2,7 +2,9 @@
     "cmake.configureOnOpen": true,
     "cmake.statusbar.visibility": "compact",
     "editor.autoClosingBrackets": "never",
+    "editor.autoClosingQuotes": "never",
     "editor.autoIndent": "keep",
+    "editor.folding": false,
     "editor.formatOnSaveMode": "modifications",
     "editor.minimap.enabled": false,
     "editor.renderWhitespace": "all",
@@ -11,10 +13,6 @@
     "explorer.confirmDragAndDrop": false,
     "explorer.confirmDelete": false,
     "workbench.tree.indent": 22,
-    "C_Cpp.default.defines": [
-        "DEBUG=1",
-        "BOARD_SUPPORTS_RC_SERIAL_PORT_OUTPUT"
-    ],
-    "scm.diffDecorationsGutterWidth": 4,
+    "scm.diffDecorationsGutterWidth": 5,
     "window.menuBarVisibility": "compact"
 }
