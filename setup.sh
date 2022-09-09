@@ -11,8 +11,9 @@ ln -sf ~/.dotfiles/jmacsrc   ~/.jmacsrc
 ln -sf ~/.dotfiles/gitignore ~/.gitignore
 ln -sf ~/.dotfiles/gitconfig ~/.gitconfig
 
-# TMux Configuration
-ln -sf ~/.dotfiles/tmux.conf ~/.tmux.conf
+# Byobu Configuration
+ln -s ~/.dotfiles/byoburc ~/.byoburc
+ln -s ~/.dotfiles/byobu ~/.byobu
 
 # link VS.Code-Specific Configuration Files into their target locations
 ln -sf ~/.dotfiles/vscode/keybindings.json ~/.config/Code/User/keybindings.json

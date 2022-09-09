@@ -1,0 +1,14 @@
+
+# disable screen backend:
+screen_upper_left=" "
+screen_upper_right=" "
+screen_lower_left=" "
+screen_lower_right=" "
+
+# ==================================================
+
+# Tmux has one status line, with 2 halves for status
+tmux_left="logo | whoami @ hostname | session"
+
+# You can have as many tmux right lines below here, and cycle through them using Shift-F5
+tmux_right="wifi_quality | date time"
