@@ -11,41 +11,49 @@
         sta = show --stat
         stat = show --stat
         pf = push --force-with-lease
+        pt = push --tags
 	root = rev-parse --show-toplevel
         sub = submodule
         subup = sub update --init --recursive
 
-[user]
-        name = Daniel Williams
-        email = equipoise@gmail.com
-        
+
 [core]
         autocrlf = input
         filemode = false
         editor = emacs-nox
 	excludesfile = ~/.gitignore
 
-[push]
-	default = simple
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
 
-[merge]
-	commit = no
-	ff = only
+[format]
+	pretty = oneline
+
+[init]
+	defaultBranch = main
 
 [log]
 	abbrevcommit = true
         decorate = auto
 
-[format]
-	pretty = oneline
+[merge]
+	commit = no
+	ff = only
+
+[push]
+	default = simple
 
 # [receive]
 #	denyCurrentBranch = updateInstead
 # [status]
 #	submodulesummary = 1
 #
-[filter "lfs"]
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
-	required = true
+
+
+[user]
+        name = Daniel Williams
+        email = equipoise@gmail.com
+
