@@ -17,10 +17,7 @@ unbind-key -n M-Down
 
 bind-key -n F3 select-pane -t :.-  \; display-panes
 bind-key -n F4 select-pane -t :.+  \; display-panes
-bind-key -n C-Up select-pane -U    \; display-panes
-bind-key -n C-Down select-pane -D  \; display-panes
-bind-key -n C-Left select-pane -L  \; display-panes
-bind-key -n C-Right select-pane -R \; display-panes
+
 
 ## set window (tab) selection
 bind-key -n M-1 select-window -t 0
