@@ -7,4 +7,4 @@ if [ -z "$SSH_AUTH_SOCK" ] ; then
   ssh-add
 fi
 
-setxkbmap -option ctrl:nocaps
+
