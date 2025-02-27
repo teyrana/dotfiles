@@ -9,3 +9,4 @@
 (load (concat path "settings.el"))
 (load (concat path "typescript-mode.el"))
 (load (concat path "ui.el"))
+(load (concat path "yaml-mode.el"))
