@@ -1,27 +1,44 @@
 # git config file
-# dwilliams, 2019
+# dawilliams, 2025
 
 [alias]
-        br = branch
-        co = checkout
-        ea = submodule foreach
-        head = rev-parse --show-toplevel
-        ls = ls-files
-        st = status
-        sta = show --stat
-        stat = show --stat
-        pf = push --force-with-lease
-        pt = push --tags
+	br = branch
+	co = checkout
+	ea = submodule foreach
+	head = rev-parse --show-toplevel
+	ls = ls-files
+	ll = log -11
+	st = status
+	sta = show --stat
+	stat = show --stat
+	pf = push --force-with-lease
+	pt = push --tags
 	root = rev-parse --show-toplevel
-        sub = submodule
-        subup = sub update --init --recursive
+	sub = submodule
+	subup = sub update --init --recursive
 
+[branch]
+	sort = -committerdate
 
 [core]
-        autocrlf = input
-        filemode = false
-        editor = emacs-nox
+	autocrlf = input
+	filemode = false
+	editor = emacs-nox
 	excludesfile = ~/.gitignore
+
+[diff]
+	colorMoved = true
+	algorithm = histogram
+	mnemonicPrefix = true
+	renames = true
+
+#[feature]
+	experimental = true
+
+[fetch]
+	prune = true
+	pruneTags = true
+	all = true
 
 [filter "lfs"]
 	clean = git-lfs clean -- %f
@@ -37,21 +54,25 @@
 
 [log]
 	abbrevcommit = true
-        decorate = auto
+	decorate = auto
 
 [merge]
 	commit = no
 	ff = only
 
 [push]
-	default = simple
+	autoSetupRemote = true
+	followTags = true
 
-# [receive]
-#	denyCurrentBranch = updateInstead
-# [status]
-#	submodulesummary = 1
-#
+[rebase]
+	autosquash = true
 
+[rerere]
+	enabled = true
+	autoupdate = true
+
+[tag]
+	sort = version:refname
 
 [user]
         name = Daniel Williams
