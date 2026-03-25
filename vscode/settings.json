@@ -1,6 +1,5 @@
 {
     "cmake.configureOnOpen": true,
-    "cmake.statusbar.visibility": "compact",
     "editor.autoClosingBrackets": "never",
     "editor.autoClosingQuotes": "never",
     "editor.autoIndent": "keep",
@@ -14,5 +13,10 @@
     "explorer.confirmDelete": false,
     "workbench.tree.indent": 22,
     "scm.diffDecorationsGutterWidth": 5,
-    "window.menuBarVisibility": "compact"
+    "window.menuBarVisibility": "compact",
+    "cmake.options.statusBarVisibility": "compact",
+    "cmake.showOptionsMovedNotification": false,
+    "workbench.secondarySideBar.defaultVisibility": "hidden",
+    "chat.agent.enabled": false,
+    "editor.unicodeHighlight.invisibleCharacters": false
 }
